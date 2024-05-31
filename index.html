@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Práctica de plataformas de publicación y distribución</h1>
-        <h2>Carlos Manuel Ruiz Ruiz</h2>
+        <h2 class="nombre">Carlos Manuel Ruiz Ruiz</h2>
     </header>
     <main>
         <section>
@@ -46,21 +46,28 @@
                 <li>VID_PR_VP9_720p.webm (VP9 + Vorbis con resolución 1280x720 y 30fps): 3097 kbps</li>
                 <li>VID_PR_VP9_360p.webm (VP9 + Vorbis con resolución 640x360 y 30fps): 1102 kbps</li>
             </ul>
-
+            <video controls width="854" height="480" preload="auto" defaultPlaybackRate="1.0" volume="0.8" disablepictureinpicture>
+                <source src="videos/VID_PR_H264_720p.mp4" type="video/mp4">
+                <source src="videos/VID_PR_H264_360p.mp4" type="video/mp4">
+                <source src="videos/VID_PR_VP9_720p.webm" type="video/webm">
+                <source src="videos/VID_PR_VP9_360p.webm" type="video/webm">
+                Tu navegador no soporta el elemento de vídeo.
+            </video>
+			
             <h3>Tarea 1.2</h3>
             <h4>Creación de la Web:</h4>
             <p>He generado un fichero .html mediante un editor de texto que incluye el siguiente código:</p>
-            <img src="images/tarea_1_2.png" alt="Código de la web con el clip de video incrustado en sus diferentes opciones">
-            <p>Tal y como indica el enunciado he utilizado la etiqueta <video> para incrustar el vídeo. Con el atributo ‘controls’ se añaden los controles de reproducción como play, pause y volumen.</p>
+            <img src="images/Imagen1.png" alt="Código de la web con el clip de video incrustado en sus diferentes opciones">
+            <p>Tal y como indica el enunciado he utilizado la etiqueta &lt;video&gt; para incrustar el vídeo. Con el atributo ‘controls’ se añaden los controles de reproducción como play, pause y volumen.</p>
             <p>Para asegurar que la web pueda ser visualizada desde la mayor parte de los navegadores he utilizado el elemento <source> para añadir las distintas fuentes de video con los formatos que se codificaron en la tarea anterior. El navegador elegirá automáticamente el formato más adecuado que pueda reproducir. Por último he incluido un mensaje alternativo que se mostrará en el caso de que no se pueda reproducir el elemento de video.</p>
             <h4>Características del Formato HTML5:</h4>
             <p>El formato HTML5 se distingue por varias características que lo hacen ideal para la publicación y visualización de vídeos en la web comparado con métodos más antiguos [4] [5]:</p>
             <ul>
                 <li><strong>Soporte Multiplataforma:</strong> Compatible con una amplia gama de dispositivos incluyendo ordenadores de escritorio, portátiles, tablets y smartphones.</li>
                 <li><strong>Compatibilidad Nativa:</strong> Funciona en todos los navegadores modernos sin necesidad de plugins adicionales.</li>
-                <li><strong>Uso de Etiquetas Semánticas:</strong> La etiqueta <video> es semántica y fácil de usar permitiendo la incrustación de vídeos con pocas líneas de código.</li>
+                <li><strong>Uso de Etiquetas Semánticas:</strong> La etiqueta &lt;video&gt; es semántica y fácil de usar permitiendo la incrustación de vídeos con pocas líneas de código.</li>
                 <li><strong>Carga Adaptativa:</strong> Permite especificar múltiples fuentes de vídeo para asegurar la compatibilidad máxima y elegir automáticamente la mejor opción disponible.</li>
-                <li><strong>Accesibilidad:</strong> Soporta subtítulos y descripciones de audio mediante la etiqueta <track> mejorando la accesibilidad para usuarios con discapacidades.</li>
+                <li><strong>Accesibilidad:</strong> Soporta subtítulos y descripciones de audio mediante la etiqueta &lt;track&gt; mejorando la accesibilidad para usuarios con discapacidades.</li>
                 <li><strong>Navegación sin conexión:</strong> Permite a los usuarios continuar navegando por las páginas web y aplicaciones web incluso sin conexión.</li>
                 <li><strong>Integración con CSS y JavaScript:</strong> Facilita la personalización y manipulación de la reproducción del vídeo permitiendo crear experiencias de usuario interactivas y estilizadas.</li>
             </ul>
@@ -69,12 +76,12 @@
             <h4>Publicación de la web.</h4>
             <p>He publicado el fichero .html y los vídeos en GitHub [6], una plataforma que permite hacerlo de manera gratuita a través de GitHub Pages.</p>
             <p>Para ello he creado un nuevo repositorio en el que he subido el archivo html5 ‘index.html’ y los videos que he generado en las tareas anteriores. Por último publico la rama en GitHub Pages:</p>
-            <img src="images/tarea_1_3.png" alt="Publicación del sitio en GitHub Pages">
+            <img src="images/Imagen2.png" alt="Publicación del sitio en GitHub Pages">
             <h4>Experiencia de usuario</h4>
             <p>La experiencia al visualizar el video es buena, se reproduce casi inmediatamente, no se producen cortes y la calidad es muy buena. El único inconveniente lo he encontrado a la hora de reproducirlo a través de mi dispositivo móvil. El tamaño del video no se escala en función de la ventana en que se reproduce y a la hora de verlo desde el teléfono el tamaño de reproducción es muy grande, he tenido que alejar la imagen para verlo completo. Con los controles incrustados también es posible reproducirlo a pantalla completa.</p>
 
             <h3>Tarea 1.4</h3>
-            <p>En el transcurso de esta tarea he experimentado con las distintas funcionalidades que es posible añadir al vídeo utilizando los atributos que el tag <video> ofrece en HTML5. A continuación detallo las que he añadido y cómo creo que mejoran la experiencia del usuario:</p>
+            <p>En el transcurso de esta tarea he experimentado con las distintas funcionalidades que es posible añadir al vídeo utilizando los atributos que el tag &lt;video&gt; ofrece en HTML5. A continuación detallo las que he añadido y cómo creo que mejoran la experiencia del usuario:</p>
             <ul>
                 <li><strong>Controls:</strong> Ya los tenía en la versión inicial de la web. Los controles de reproducción permiten al usuario pausar, reproducir y ajustar el volumen del vídeo.</li>
                 <li><strong>Width y height:</strong> He reestablecido las dimensiones del vídeo a 854x480 píxeles, un tamaño adecuado para la mayoría de las pantallas.</li>
@@ -86,7 +93,7 @@
                 <li><strong>Volume:</strong> Inicialmente ajustado al 80% del volumen máximo para un nivel de audio cómodo.</li>
                 <li><strong>Subtítulos:</strong> He añadido pistas de subtítulos en español (captions.es.vtt) e inglés (captions.en.vtt) para mejorar la accesibilidad del contenido.</li>
             </ul>
-            <img src="images/tarea_1_4.png" alt="Código de la web con el clip de video incrustado y con atributos añadidos">
+            <img src="images/Imagen3.png" alt="Código de la web con el clip de video incrustado y con atributos añadidos">
             <p>La web está disponible a través del siguiente enlace:</p>
             <a href="https://carlosmdobler.github.io/html5-video/">https://carlosmdobler.github.io/html5-video/</a>
 
@@ -115,39 +122,42 @@
                 <li>Contenedor: MKV</li>
             </ul>
             <p>Por último he verificado con MediaInfo que la conversión se ha realizado correctamente.</p>
-            <img src="images/tarea_2_1.png" alt="Información básica del clip01 en MediaInfo">
-
+            <img src="images/Imagen4.png" alt="Información básica del clip01 en MediaInfo">
+            <video controls width="854" height="480" preload="auto" defaultPlaybackRate="1.0" volume="0.8" disablepictureinpicture>
+                <source src="videos/clip01.mkv" type="video/mp4">
+                Tu navegador no soporta el elemento de vídeo.
+            </video>
             <h3>Tarea 2.2</h3>
             <p>He configurado la emisión repetitiva del clip01 siguiendo el ejemplo del clip de fútbol. Como el stream se entrecortaba he decidido utilizar el códec de emisión H.264+MP3 (TS) tal y como se recomienda en el enunciado para estas situaciones.</p>
-            <img src="images/tarea_2_2_stream.png" alt="Stream del clip01">
+            <img src="images/Imagen5.png" alt="Stream del clip01">
             <p>De acuerdo con la información del códec obtenida en el VLC de emisión el fichero almacenado se generó con codificación de video H264 AVC y con codificación de audio MPEG audio layer 1/2.</p>
-            <img src="images/tarea_2_2_codec.png" alt="Codificación del archivo almacenado según VLC">
+            <img src="images/Imagen6.png" alt="Codificación del archivo almacenado según VLC">
             <p>Revisando las estadísticas de emisión he podido comprobar que la tasa de bits de contenido varía entre los 2500kb/s y los 9000kb/s con una media de unos 4000kb/s</p>
-            <img src="images/tarea_2_2_stats.png" alt="Estadísticas de emisión">
+            <img src="images/Imagen7.png" alt="Estadísticas de emisión">
 
             <h3>Tarea 2.3</h3>
             <p>Revisando ahora la información del códec en el VLC de recepción he podido comprobar que el stream recibido tiene una codificación de video H264 AVC y de audio MPEG audio layer 1/2 que coincide con la que se seleccionó para la emisión.</p>
-            <img src="images/tarea_2_3_codec.png" alt="Codificación del stream recibido según VLC">
+            <img src="images/Imagen8.png" alt="Codificación del stream recibido según VLC">
             <p>La tasa de bits de entrada sin embargo es de en torno a los 1500kb/s. Muy por debajo de la de emisión. Esto afecta a la calidad del vídeo resultando en una imagen menos nítida y con algunos artefactos de compresión.</p>
-            <img src="images/tarea_2_3_stats.png" alt="Estadísticas de recepción">
+            <img src="images/Imagen9.png" alt="Estadísticas de recepción">
 
             <h3>Tarea 2.4</h3>
             <p>Si pauso el emisor el receptor tarda aproximadamente 1 segundo en pausarse. Esto ocurre porque el receptor tiene un caché que almacena hasta 1000 ms de datos del stream para asegurar una reproducción continua y sin interrupciones.</p>
-            <img src="images/tarea_2_4.png" alt="Menú de opciones en abrir ubicación de red">
+            <img src="images/Imagen10.png" alt="Menú de opciones en abrir ubicación de red">
 
             <h3>Tarea 2.5</h3>
             <p>Para calcular la compresión que el VLC de emisión está realizando al transcodificar el fichero almacenado a stream comparé la tasa de bits del fichero original con la tasa de bits del stream emitido.</p>
             <p>El fichero clip01 almacenado tiene una tasa de bits de aproximadamente 5120 kbps (5000kbps de video y 128kbps de audio). Durante la emisión la tasa de bits varió entre 2500 kbps y 9000 kbps con una media de aproximadamente 4000 kbps. En la recepción la tasa de bits fue de aproximadamente 1500 kbps.</p>
-            <p>Tasa de compresión emisor = Tasa de bits fichero almacenado / Tasa de bits stream emitido = 5120 kbps / 4000 kbps = 1.28:1 ≅ 1.25:1</p>
+            <p>Tasa de compresión emisor = Tasa de bits fichero almacenado / Tasa de bits stream emitido = 5120 kbps / 4000 kbps = 1.28:1 &asymp; 1.25:1</p>
             <p>Esto indica que el stream emitido tiene una tasa de compresión de aproximadamente 1.25:1.</p>
             <p>La tasa de bits de recepción es mucho menor y tal y como se indicó en el apartado 2.3 las perdidas repercuten negativamente en la calidad de la visualización. La tasa de compresión del stream recibido respecto al fichero original es de 3.5 a 1:</p>
-            <p>Tasa de compresión receptor = Tasa de bits fichero almacenado / Tasa de bits stream recibido = 5120 kbps / 1500 kbps = 3.41:1 ≅ 3.5:1</p>
+            <p>Tasa de compresión receptor = Tasa de bits fichero almacenado / Tasa de bits stream recibido = 5120 kbps / 1500 kbps = 3.41:1 &asymp; 3.5:1</p>
             <p>A continuación se muestra una captura de pantalla del escritorio con los dos VLC en marcha y sus ventanas con las estadísticas de cada uno abiertas.</p>
-            <img src="images/tarea_2_5.png" alt="Captura de pantalla con VLC emisor y receptor">
+            <img src="images/Imagen11.png" alt="Captura de pantalla con VLC emisor y receptor">
 
             <h3>Tarea 2.6</h3>
             <p>En esta tarea se abordará la opción de hacer un stream de video en vivo con Live Streaming en AWS con Amazon S3. Para hacerlo además del almacenamiento Amazon S3 se utilizan los servicios Elemental MediaLive [11] y Amazon CloudFront [12]. La descripción que he hecho de los pasos necesarios para configurar y realizar la transmisión en vivo se basan en la guía “Live Streaming on AWS with Amazon S3” [13] que se puede encontrar en la página de AWS.</p>
-            <img src="images/tarea_2_6.png" alt="Diagrama de la arquitectura del streaming">
+            <img src="images/Imagen12.png" alt="Diagrama de la arquitectura del streaming">
             <h4>Configuración de AWS Elemental MediaLive</h4>
             <p>El primer paso es utilizar AWS Elemental MediaLive para codificar las transmisiones en tiempo real. MediaLive comprime la transmisión de vídeo en versiones más pequeñas que pueden ser distribuidas a través de CloudFront. Para ello se debe acceder a la consola de AWS Elemental MediaLive y crear un nuevo canal.</p>
             <p>En la configuración del canal es necesario seleccionar un códec de vídeo como H.264 y un códec de audio como AAC. La entrada se puede configurar como una fuente RTMP o HTTP Live Stream (HLS). En este momento se configuran también los perfiles de codificación para asegurar una transmisión fluida y de alta calidad.</p>
@@ -162,11 +172,11 @@
             <h4>Cálculo estimado del coste</h4>
             <p>Para estimar el coste por minuto de una transmisión HD me baso en la información proporcionada en el ejemplo número 2 [14] de la guía de implementación de AWS Live Streaming en su apartado de costes. Los precios están en dólares y se han calculado para la región US-East-1 en Estados Unidos. En la guía no se especifica si se aplican diferentes tarificaciones para las distintas regiones pero puede dar una idea aproximada de lo que costaría el servicio en Europa. Se considera una transmisión en vivo de contenido HD (1080p 30fps) para 10000 usuarios simultaneos.</p>
             <p>El coste de la transcodificación y empaquetado para contenido en alta definición (1080p 30 fps) es de aproximadamente $3.11 por hora.</p>
-            <img src="images/tarea_2_6_cost1.png" alt="Coste MediaLive por hora">
+            <img src="images/Imagen13.png" alt="Coste MediaLive por hora">
             <p>Las tarifas de Amazon S3 incluyen 0023 dólares por gigabyte (GB) al mes almacenado para los primeros 50 TB. Además se cobran $0.005 por cada 1000 solicitudes PUT COPY POST o LIST. Para este caso con 6 outputs en distintas resoluciones y 21 segmentos de 4s almacenados. Se tiene un coste de almacenamiento por hora de $0.000005 y de $0.054 para las peticiones.</p>
-            <img src="images/tarea_2_6_cost2.png" alt="Coste Amazon S3 por hora">
+            <img src="images/Imagen14.png" alt="Coste Amazon S3 por hora">
             <p>Si asumimos un ancho de banda promedio de 4.1Mbps por espectador y considerando una tarifa de $0.085 por GB distribuido el coste total de distribución será de $1531.49 por hora.</p>
-            <img src="images/tarea_2_6_cost3.png" alt="Coste de distribución por hora">
+            <img src="images/Imagen15.png" alt="Coste de distribución por hora">
             <p>Por tanto el coste total del servicio es de 1534.65 dólares por hora o 25.58 dólares por minuto:</p>
             <p>$3.11/h + $0.054/h + $1531.49/h = $1534.65/h = $25.58/min</p>
         </section>
@@ -192,7 +202,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Práctica de Streaming</p>
+        <p>&copy; 2024 Carlos Manuel Ruiz Ruiz</p>
     </footer>
 </body>
 </html>
